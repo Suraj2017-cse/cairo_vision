@@ -6,8 +6,10 @@ function App() {
   return (
    <>
    <HeaderItem />
-   <Companion />
+    <main>
+    <Companion />
    <Customers />
+    </main>
    </>
   );
 }
