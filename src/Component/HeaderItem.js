@@ -8,6 +8,7 @@ import {
   BsYoutube,
   BsLinkedin,
   BsInstagram,
+  BsCheckCircle,
 } from "react-icons/bs";
 
 const HeaderItem = () => {
@@ -108,10 +109,10 @@ const HeaderItem = () => {
         </div>
 
         <div className='container'>
-          <div className='row'>
-            <div className='col-md-6'>
+          <div className='row mt-5'>
+            <div className='col-md-6 mt-5'>
               <h2>
-                Hi! We’re <br />
+                Hi! We’re <br />  
                 Papa.
               </h2>
               <p>We all need a pal sometimes. That’s why Papa’s here.</p>
@@ -140,7 +141,7 @@ const HeaderItem = () => {
               </select>
             </div>
 
-            <div className='col-md-6'>
+            <div className='col-md-6 mt-5'>
               <img
                 src='./FPO_Home-Hero_683x1096.webp'
                 alt='Hero-Papa'
@@ -150,8 +151,11 @@ const HeaderItem = () => {
           </div>
         </div>
 
-        <div className='human-icon'>
-          <IoIosMan className='man-icon' />
+        <div className='position-fixed human-icon'>
+         {/* <div className="position-relative"> */}
+         <IoIosMan className='position-absolute fs-1' />
+          <BsCheckCircle className="position-absolute fs-4 top" />
+         {/* </div> */}
         </div>
       </header>
     </>

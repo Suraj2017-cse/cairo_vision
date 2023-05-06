@@ -45,3 +45,23 @@
         padding: 1rem 0;
     }
 }
+
+.human-icon{
+    bottom: 5rem;
+    background-color: #69F1FF;
+    padding: 2.3rem;
+    clip-path: circle();
+    left: 3rem;
+    z-index: 3;
+}
+.human-icon .fs-4{
+    top: 2.5rem;
+    left: .5rem;
+    color: #fff;
+}
+.human-icon .fs-1{
+    top: .7rem;
+    color: #FFFFFF;
+    left: .9rem;
+    font-size: 3rem !important;
+}

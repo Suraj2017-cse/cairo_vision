@@ -8,7 +8,7 @@ const Customers = () => {
       <section className='container users'>
         {PremiumData.map((premium) => (
           <div className='row mt-5 p-2' key={premium.id}>
-            <div className={`col-lg-6 padding order-${premium.order1}`}>
+            <div className={`col-lg-6 padding order-lg-${premium.order1} order-5`}>
               <h2 className='fw-bolder'>{premium.title}</h2>
               <p>{premium.desc}</p>
               <button className='py-2 px-4 border-0 rounded-5 fw-bolder'>
@@ -16,7 +16,7 @@ const Customers = () => {
               </button>
             </div>
             <div
-              className={`col-lg-6 position-relative d-flex justify-content-center height order-${premium.order2}`}>
+              className={`col-lg-6 position-relative d-flex justify-content-center height order-lg-${premium.order2} order-3`}>
               <img
                 src={premium.img1}
                 alt={premium.alt}

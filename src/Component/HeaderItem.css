@@ -75,13 +75,25 @@
   /* side-navbar */
   .side-navbar{
     background-color: #06083C !important;
+    /* border-top-left-radius: 200px; */
+    /* border-bottom-left-radius: 200px; */
     color: #69F1FF;
     height: 104vh;
     top: -1.5rem;
     z-index: 1;
     width: 50vw;
+    animation-name: animation;
+    animation-duration: 0.9s;
   }
 
+  @keyframes animation {
+    0%{
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
   .side-navbarItem-2 li{
     clip-path: circle();
     color: #06083C;
