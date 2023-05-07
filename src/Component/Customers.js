@@ -4,6 +4,7 @@ import { PremiumData } from "../Data";
 
 const Customers = () => {
   return (
+    <>
     <section className='p-4'>
       <div className='container users'>
         {PremiumData.map((premium) => (
@@ -37,6 +38,7 @@ const Customers = () => {
         ))}
       </div>
     </section>
+    </>
   );
 };
 
