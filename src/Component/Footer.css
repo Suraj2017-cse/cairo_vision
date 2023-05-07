@@ -1,0 +1,63 @@
+footer{
+    background-color: #06083c;
+    padding-bottom: 7rem;
+}
+
+.smiley{
+    text-align: center;
+    padding-top: 10rem;
+    margin-bottom: 7rem;
+}
+
+.smiley img{
+    clip-path: circle();
+    width: 16%;
+}
+
+.footer-health-plan{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-health-plan li{
+    color: #69f1ff;
+    list-style-type: none;
+    margin-left: 3rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.terms-of-service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block: 3rem;
+}
+
+.terms-of-service li{
+    color: #1680F3;
+    list-style-type: none;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 1.5rem;
+}
+
+.footer-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-icons span{
+    clip-path: circle();
+    font-size: 1rem;
+    padding: 0.4rem;
+    color: #000;
+    background: #69f1ff;
+    margin-left: 3rem;
+}
+
+.footer-logo{
+    font-size: 2rem;
+}

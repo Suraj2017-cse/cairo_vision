@@ -2,6 +2,9 @@ import Companion from "./Component/Companion";
 import HeaderItem from "./Component/HeaderItem";
 import Customers from './Component/Customers';
 import CarouselItems from "./Component/CarouselItems";
+import Article from "./Component/Article";
+import Resources from "./Component/Resources";
+import Footer from "./Component/Footer";
 
 function App() {
   return (
@@ -11,7 +14,10 @@ function App() {
     <Companion />
    <Customers />
     <CarouselItems />
+    <Article />
+    <Resources />
     </main>
+    <Footer />
    </>
   );
 }

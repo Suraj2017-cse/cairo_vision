@@ -1,0 +1,69 @@
+article{
+    background-color: #ffedcc;
+    padding-bottom: 4rem;
+}
+
+.article{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-top: 10rem;
+    /* display: grid;
+    grid-template-columns: 50% 50%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 980px){
+    .article{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+
+.how-it-works{
+    flex: 1;
+}
+
+.dad-daughter{
+    flex: 1;
+    /* margin-left: 10rem; */
+    /* padding-top: 12rem; */
+    margin-top: 10rem;
+    align-items: center;
+    text-align: center;
+}
+
+.dad-daughter img{
+    width: 70%;
+    height: 85%;
+    border-radius: 30px;
+    transform: rotate(5deg);
+}
+
+.how-work h2{
+    font-size: 4rem;
+    margin-block: 2rem;
+    /* font-family: sans-serif; */
+    /* font-weight: bolder; */
+}
+
+.how-work p{
+    font-size: 1.15rem;
+    line-height: 1.7rem;
+}
+
+.participating-plan{
+    margin-top: 2rem;
+}
+
+.participating-plan h2{
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+.participating-plan p{
+    font-size: 1.17rem;
+    line-height: 2rem;
+}
