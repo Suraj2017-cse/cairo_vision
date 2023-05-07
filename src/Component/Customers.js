@@ -4,8 +4,8 @@ import { PremiumData } from "../Data";
 
 const Customers = () => {
   return (
-    <main className='p-4'>
-      <section className='container users'>
+    <section className='p-4'>
+      <div className='container users'>
         {PremiumData.map((premium) => (
           <div className='row mt-5 p-2' key={premium.id}>
             <div className={`col-lg-6 padding order-lg-${premium.order1} order-5`}>
@@ -35,8 +35,8 @@ const Customers = () => {
             </div>
           </div>
         ))}
-      </section>
-    </main>
+      </div>
+    </section>
   );
 };
 

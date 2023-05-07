@@ -1,0 +1,59 @@
+.carousel-indicators [data-bs-target]{
+    background-clip: unset !important;
+    clip-path: circle();
+    background-color: #204497 !important;
+    padding: .1rem !important;
+    width: 20px !important;
+    margin-right: 20px !important;
+        border-top: 5px solid transparent !important;
+    margin-left: 10px !important;
+        border-bottom: 5px solid transparent !important;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    font-size: 1rem !important;
+    background-color: red;
+}
+.button {
+    background-color: #69F1FF;
+}
+.button .fs-1 {
+    background-color: transparent !important;
+}
+
+.img-transform_1{
+    transform: rotate(-5deg);
+    /* height: 100vh; */
+    margin-left: 2rem;
+    margin-top: 3rem;
+    z-index: 3;
+}
+.img-transform_2{
+    transform: rotate(5deg);
+    margin-left: -4rem;
+    margin-top: 3rem;
+    margin-right: 3rem;
+}
+
+.carousel-item h2{
+    color: #69F1FF;
+    font-size: 4rem;
+}
+.carousel-item p{
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+.carousel-item button{
+    background-color: #69F1FF;
+    color: #06083C;
+}
+
+@media (max-width:768px){
+    .img-transform_1{
+        transform: rotate(-5deg);
+        margin-top: 1rem !important;
+    }
+    .carousel-item .w-50{
+        width: 100% !important;
+    }
+}
