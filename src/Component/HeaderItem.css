@@ -24,7 +24,15 @@
     color: rgb(17, 64, 192);
     font-family: Moderne LL, Arial, "sans-serif";
   }
+
+  .hero-mummy {
+    transform: rotate(5deg);
+  }
+  .hero-mummy-bgColor{
+    background-color: #06083C !important;
+  }
   
+
   
   /* Section Hero */
   
@@ -104,6 +112,9 @@
   }
   
 @media (max-width:600px){
+  .hero-mummy.w-100{
+    width: 90% !important;
+  }
   .side-navbar{
     width: 100vw;
   }

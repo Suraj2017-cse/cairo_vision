@@ -9,28 +9,41 @@ import {
   BsLinkedin,
   BsInstagram,
 } from "react-icons/bs";
+import { Link, useNavigate } from 'react-router-dom';
 
-const HeaderItem = () => {
+const HeaderItem = ({home}) => {
   const display = useRef(null);
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
     setIsActive(!isActive);
   };
+
+
+ const navigate = useNavigate()
+const handlePlans = () => {
+  navigate("/health-plans")
+}
+
+const handleHome = () => {
+  navigate('/')
+}
+  
+  
   return (
     <>
-      <header className='header'>
+      <header className={`header ${home[0].alt === 'Hero-Papa' ? 'h': 'hero-mummy-bgColor text-white'}`}>
         <nav className='position-fixed w-100 z-index'>
           <div className='container-fluid d-flex justify-content-between'>
-            <a className='navbar-brand d-flex align-items-center' href='/'>
+            <Link className='navbar-brand d-flex align-items-center' onClick={handleHome}>
               <img src='./linkedin.png' alt='header logo' className='width' />
-            </a>
+            </Link>
             <div className='d-flex position-relative'>
               <ul className='menu-items list-unstyled d-lg-flex d-none flex-lg-row align-items-center justify-content-center bg-white rounded-5 px-4 py-0 fw-bolder'>
-                <li className='nav-item'>
-                  <a className='nav-link' href='/'>
+                <li className='nav-item' onClick={handlePlans}>
+                  <Link className='nav-link'>
                     Health Plans
-                  </a>
+                  </Link>
                 </li>
                 <li className='nav-item ms-4'>
                   <a className='nav-link' href='/'>
@@ -75,7 +88,7 @@ const HeaderItem = () => {
           }`}
           ref={display}>
           <ul className='list-unstyled side-navbarItem d-lg-none d-flex align-items-end flex-column gap-2 mt-5 pt-5'>
-            <li className='fs-3 fw-bold'>Health Plans</li>
+            <li className='fs-3 fw-bold' onClick={handlePlans}>Health Plans</li>
             <li className='fs-3 fw-bold'>Employers</li>
             <li className='fs-3 fw-bold'>Be a Papa Pal</li>
             <li className='fs-3 fw-bold'>Resources</li>
@@ -93,7 +106,7 @@ const HeaderItem = () => {
               <BsTwitter />
             </li>
             <li className='p-2'>
-              <BsFacebook />{" "}
+              <BsFacebook />
             </li>
             <li className='p-2'>
               <BsYoutube />
@@ -107,21 +120,15 @@ const HeaderItem = () => {
           </ul>
         </div>
 
-        <div className='container'>
+       {
+        home.map((element) => (
+          <div className='container'>
           <div className='row mt-5'>
             <div className='col-md-6 mt-5'>
-              <h2>
-                Hi! We’re <br />  
-                Papa.
-              </h2>
-              <p>We all need a pal sometimes. That’s why Papa’s here.</p>
-              <span>
-                Papa helps health plans and employers connect members and their
-                families to real people for help with companionship, everyday
-                tasks, transportation, and more. It’s vital human connection,
-                right to the front door.
-              </span>
-              <select className='form-select mb-4 rounded-5 px-3 py-3 mt-4 fw-bolder fs-3'>
+              <h2> {element.title}<br />{element.title2}</h2>
+              <p>{element.para}</p>
+              <p>{element.para2}</p>
+              {element.alt === 'Hero-Papa' ? <select className='form-select mb-4 rounded-5 px-3 py-3 mt-4 fw-bolder fs-3'>
                 <option className='fw-bold' disabled selected>
                   I'd like to learn...
                 </option>
@@ -137,25 +144,25 @@ const HeaderItem = () => {
                 <option className='fw-bold'>
                   about career opportunities at Papa
                 </option>
-              </select>
+              </select> : <button className="px-3 py-2 border-0 rounded-5 fw-bolder text-uppercase  contact-papa">get started</button>}
             </div>
 
             <div className='col-md-6 mt-5'>
               <img
-                src='./FPO_Home-Hero_683x1096.webp'
-                alt='Hero-Papa'
-                className='w-100'
+                src={element.img}
+                alt={element.alt}
+                className='w-100 rounded-5 hero-mummy'
               />
             </div>
           </div>
         </div>
-
+        ))
+       }
+        
         <div className='position-fixed human-icon'>
-         {/* <div className="position-relative"> */}
          <IoIosMan className='position-absolute fs-1' />
-         {/* </div> */}
         </div>
-        <svg aria-hidden="true" viewBox="0 0 1440 64" class="w-full h-[21px] md:h-8 lg:h-12 xl:h-16 block absolute fill-bg top-0 left-0 transform translate-y-[calc(-100%+1px)] overflow-visible" preserveAspectRatio="none"><path d="M0,0S203,64,720,64,1440,0,1440,0V64H0Z" fill="#FFEDCC"></path></svg>
+        <svg aria-hidden="true" viewBox="0 0 1440 64" className="w-full h-[21px] md:h-8 lg:h-12 xl:h-16 block absolute fill-bg top-0 left-0 transform translate-y-[calc(-100%+1px)] overflow-visible" preserveAspectRatio="none"><path d="M0,0S203,64,720,64,1440,0,1440,0V64H0Z" fill="#FFEDCC"></path></svg>
       </header>
     </>
   );
