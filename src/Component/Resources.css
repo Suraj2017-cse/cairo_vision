@@ -5,7 +5,7 @@ aside{
 #resource{
     max-width: 1300px;
     margin: 0 auto;
-    padding-top: 10rem;
+    padding: 8rem 0;
     padding-inline: 2rem;
 }
 
@@ -41,6 +41,7 @@ aside{
     margin-top: 3rem;
     display:flex;
     flex-wrap: wrap;
+    gap: 1rem;
     justify-content: space-between;
 }
 
@@ -51,9 +52,8 @@ aside{
 
 .single-card{
     flex-basis:calc(33% - 1rem);
-    margin-bottom:20px;
     cursor: pointer;
-    /* height: 180%; */
+
 }
 
 @media only screen and (max-width: 1000px){
@@ -71,7 +71,6 @@ aside{
     .resource{
         flex-direction: column;
         text-align: center;
-        /* padding-inline: 2rem; */
     }
 
     .resource h2{
@@ -79,9 +78,6 @@ aside{
         margin-bottom: 0.6rem;
     }
 
-    /* .medicaid-plan{
-        min-height: 120%;
-    } */
 }
 
 .single-card img{
@@ -96,9 +92,7 @@ aside{
     padding: 0.4rem 1rem;
     background-color: #69f1ff;
     color: #1140c0;
-    /* margin-left: -16rem; */
     position: relative;
-    /* right: 25rem; */
     border-radius: 20px;
     font-weight: bold;
     top: -2.5rem;
@@ -108,9 +102,9 @@ aside{
 .medicaid-plan{
     background: #fff;
     width: 100%;
-    min-height: 51%;
+    min-height: 55%;
     padding: 2rem;
-    margin-top: -1.2rem;
+    margin-top: -1.5rem;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }   
