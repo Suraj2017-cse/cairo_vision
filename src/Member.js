@@ -60,7 +60,7 @@ const Member = () => {
               />
               {error.fName && <p className="text-danger fw-bolder">{error.fName}</p>}
             </div>
-            <div className='col-md-6'>
+            <div className='col-md-6  mt-md-0 mt-3'>
               <input
                 onChange={handleChange}
                 type='text'
@@ -84,7 +84,7 @@ const Member = () => {
               />
               {error.businessEmail && <p className="text-danger fw-bolder">{error.businessEmail}</p>}
             </div>
-            <div className='col-md-6'>
+            <div className='col-md-6 mt-md-0 mt-3'>
               <input
                 onChange={handleChange}
                 type='text'
@@ -106,7 +106,7 @@ const Member = () => {
               </select>
               {error.state && <p className="text-danger fw-bolder">{error.state}</p>}
             </div>
-            <div className='col-md-6'>
+            <div className='col-md-6 mt-md-0 mt-3'>
               <input
                 onChange={handleChange}
                 type='number'
