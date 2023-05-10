@@ -10,6 +10,15 @@
     color: #06083C;
 }
 
+@media (max-width: 500px){
+    .padding .w-50{
+        width: 100% !important;
+    }
+    .fontSize{
+        font-size: 3rem;
+    }
+}
+
 .para1{
     font-size: 1.3rem;
     font-weight: 600;

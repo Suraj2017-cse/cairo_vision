@@ -10,7 +10,7 @@ const OurTech = ({ ourTechItem }) => {
   return (
     <section className='pt-5' style={bColor}>
       <div className='row container m-auto py-5'>
-        <div className='col-md-6'>
+        <div className='col-md-6 order-1 order-md-0'>
           {ourTechItem.map((Items) => {
             const { id, title, para } = Items;
             return (
@@ -21,7 +21,7 @@ const OurTech = ({ ourTechItem }) => {
             );
           })}
         </div>
-        <div className='col-md-6 '>
+        <div className='col-md-6 order-0 order-md-1'>
           <div className='iPhone position-relativ'>
             <img src='./iPhone-13-shell-with-nav-1341x2048.png' alt='' className="position-relative" />
             <div 
