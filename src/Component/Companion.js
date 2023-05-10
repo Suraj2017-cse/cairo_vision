@@ -18,7 +18,7 @@ const Companion = ({companionCare, title, para, meetPapa}) => {
                 const { id, title, desc, icon } = item;
                 return (
                   <div className='col-md-6' key={id}>
-                    <div className='android-icon'>{icon}</div>
+                    <h2 className='android-icon'>{icon}</h2>
                     <h4 className='fs-4'>{title}</h4>
                     <p>{desc}</p>
                   </div>

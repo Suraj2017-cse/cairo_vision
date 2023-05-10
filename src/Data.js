@@ -150,13 +150,13 @@ const CompanionCareHealthPlans = [
     {
         id : 5,
         title : 'Support communities',
-        decs : 'Our Papa Pals span backgrounds, generations, languages, and more to support diverse and underserved populations.',
+        desc : 'Our Papa Pals span backgrounds, generations, languages, and more to support diverse and underserved populations.',
         icon : <ImAndroid />
     },
     {
         id : 6,
         title : 'Mitigate costs',
-        decs : 'We help members engage with their benefits, reducing care gaps and costs while increasing retention and satisfaction.',
+        desc : 'We help members engage with their benefits, reducing care gaps and costs while increasing retention and satisfaction.',
         icon : <ImAndroid />
     }
 
@@ -255,4 +255,54 @@ const ArticleHealthPlans =[
 ]
 
 
-export  {PremiumData, CompanionCare, CompanionCareHealthPlans, ResourceData, ResourceHealthPlans, ArticleData, ArticleHealthPlans, HomeData, HomeHealth}; 
+const ProvenData = [
+    {
+        id: 1,
+        title : 'Reduced loneliness',
+        desc : 'of Papa members participating in a randomized controlled study reported a significant reduction in loneliness.',
+        num  : '69'
+    },
+    {
+        id: 2,
+        title : 'Better health',
+        desc : 'of our members report a meaningful increase in the days they feel physically and mentally well.',
+        num  : '45'
+    },
+    {
+        id: 3,
+        title : 'Higher retention',
+        desc : 'of members credit Papa as a reason for staying with their current health plan.',
+        num  : '>90'
+    },
+    {
+        id: 4,
+        title : 'Improved satisfaction',
+        desc : 'of the CMS star rating measures can be impacted by Papa.',
+        num  : '61'
+    }
+]
+
+const OurTechData = [
+    {
+        id : 1,
+        title : 'Our technology',
+        para : 'Tech has its place, even in services. Our Papa Pals and plan members are supported with their own mobile applications—making it easy to connect, schedule visits, and provide feedback.'
+    },
+    {
+        id : 2,
+        title : 'Easy to use Papa Care app for members.',
+        para : 'Available for iPhone and Android, our Papa Care app helps members schedule visits for themselves or loved ones, provide guidance on needs, and more. Don’t worry; we provide offline support as well via telephone!'
+    },
+    {
+        id : 3,
+        title : 'Intuitive app to empower our Papa Pals.',
+        para : 'Our iPhone and Android apps ensure Papa Pals have all the information they need to deliver a great experience to your members. Using a powerful algorithm, we match members and Papa Pals based on known health conditions and task requirements—ensuring they’re the perfect fit.'
+    },
+    {
+        id : 4,
+        title : 'Detailed, timely reporting for clients.',
+        para : 'Through the apps and post-visit surveys, we ingest member-level data to set objectives for follow-ups, identify gaps and escalation needs, and track performance against goals. We customize reporting dashboards to your organization’s needs.'
+    },
+]
+
+export  {PremiumData, CompanionCare, CompanionCareHealthPlans, ResourceData, ResourceHealthPlans, ArticleData, ArticleHealthPlans, HomeData, HomeHealth, ProvenData, OurTechData}; 

@@ -122,7 +122,7 @@ const handleHome = () => {
 
        {
         home.map((element) => (
-          <div className='container'>
+          <div className='container' key={element.id}>
           <div className='row mt-5'>
             <div className='col-md-6 mt-5'>
               <h2> {element.title}<br />{element.title2}</h2>
