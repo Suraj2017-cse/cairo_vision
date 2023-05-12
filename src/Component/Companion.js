@@ -2,7 +2,8 @@ import React from "react";
 import "./Companion.css";
 import RxHuman from "./RxHuman";
 
-const Companion = ({companionCare, title, para, meetPapa}) => {
+const Companion = ({companionCare, title, para, meetPapa, rxHumanData}) => {
+  // const {mainPara, paragraph, btn, img1} = rxHumanData;
   return (
     <section className='hero-content'>
       <div className='container'>
@@ -28,7 +29,7 @@ const Companion = ({companionCare, title, para, meetPapa}) => {
           </div>
         </div>
 
-        <RxHuman />
+        <RxHuman rxHumanData={rxHumanData} />
         
       </div>
       <a href='/' className='meet-papa position-relative'>

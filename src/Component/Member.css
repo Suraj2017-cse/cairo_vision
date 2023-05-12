@@ -1,0 +1,51 @@
+.padding{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.fontSize{
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1;
+    color: #06083C;
+}
+
+@media (max-width: 500px){
+    .padding .w-50{
+        width: 100% !important;
+    }
+    .fontSize{
+        font-size: 3rem;
+    }
+}
+
+.para1{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #06083C;
+
+}
+
+.memberBtn button{
+    clip-path: circle();
+    padding: 3rem;
+    font-size: 2rem;
+    border: none;
+    text-align: center;
+    color: #1140C0;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: #69F1FF;
+    transform: rotate(15deg);
+    /* transition: 0.6s ease-in-out; */
+}
+
+.memberBtn button:hover{
+    transform: rotate(0deg);
+}
+
+.member-span span{
+    color: #060C4E !important;
+    font-weight: 500;
+    font-size: 1.4rem;
+}

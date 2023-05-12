@@ -21,12 +21,25 @@ const HeaderItem = ({home}) => {
 
 
  const navigate = useNavigate()
+
+ const handleHome = () => {
+  navigate('/')
+}
+
 const handlePlans = () => {
   navigate("/health-plans")
 }
 
-const handleHome = () => {
-  navigate('/')
+const handleEmployers = () => {
+  navigate('/employers')
+}
+
+const handleBePapa = () => {
+  navigate('/be-papa-pal')
+}
+
+const handleResources = () => {
+  navigate('/resources')
 }
   
   
@@ -45,27 +58,27 @@ const handleHome = () => {
                     Health Plans
                   </Link>
                 </li>
-                <li className='nav-item ms-4'>
-                  <a className='nav-link' href='/'>
+                <li className='nav-item ms-4' onClick={handleEmployers}>
+                  <Link className='nav-link'>
                     Employers
-                  </a>
+                  </Link>
                 </li>
-                <li className='nav-item ms-4'>
-                  <a className='nav-link' href='/'>
+                <li className='nav-item ms-4' onClick={handleBePapa}>
+                  <Link className='nav-link'>
                     Be a Papa Pal
-                  </a>
+                  </Link>
                 </li>
-                <li className='nav-item ms-4'>
-                  <a className='nav-link' href='/'>
+                <li className='nav-item ms-4' onClick={handleResources}>
+                  <Link className='nav-link'>
                     Resources
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <ul className='list-unstyled d-flex justify-content-center align-items-center'>
                 <li className='nav-item contact-papa rounded-5 px-4 py-3 fw-bolder ms-3'>
-                  <a href='/' className='nav-link text-uppercase'>
+                  <Link className='nav-link text-uppercase'>
                     Contact Papa
-                  </a>
+                  </Link>
                 </li>
                 <li
                   className='nav-item contact-papa rounded-5 px-2 py-1 fw-bolder ms-3'
@@ -89,9 +102,9 @@ const handleHome = () => {
           ref={display}>
           <ul className='list-unstyled side-navbarItem d-lg-none d-flex align-items-end flex-column gap-2 mt-5 pt-5'>
             <li className='fs-3 fw-bold' onClick={handlePlans}>Health Plans</li>
-            <li className='fs-3 fw-bold'>Employers</li>
-            <li className='fs-3 fw-bold'>Be a Papa Pal</li>
-            <li className='fs-3 fw-bold'>Resources</li>
+            <li className='fs-3 fw-bold' onClick={handleEmployers}>Employers</li>
+            <li className='fs-3 fw-bold' onClick={handleBePapa}>Be a Papa Pal</li>
+            <li className='fs-3 fw-bold' onClick={handleResources}>Resources</li>
           </ul>
           <ul className='list-unstyled side-navbarItem d-flex align-items-end flex-column gap-2 mt-lg-5 pt-lg-5'>
             <li className='fs-3 fw-bold'>Life as a Papa Pal</li>

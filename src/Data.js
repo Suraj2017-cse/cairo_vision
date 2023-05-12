@@ -31,6 +31,26 @@ const HomeHealth = [
     }
 ]
 
+const EmployersData = [
+    {
+        id : 1,
+        title : 'Employers',
+        para : "Papa offers a unique type of benefit for your corporate wellness program—high-quality, human help and companionship to promote the well-being of employees and their families from our friendly Papa Pals.",
+        img : 'FPO_Employer_683x1096-rev.webp',
+        alt : 'Employers'
+    }
+]
+
+const BePapaPalData = [
+    {
+        id : 1,
+        title : 'Be a Papa Pal',
+        para : "Make a difference in your community, earning money with flexible part-time work on your own schedule. Learn how you can be a pal to an older adult, support working families, and more. Enter your phone number to start your application.",
+        img : 'FPO_Pals_683x1096-rev4.webp',
+        alt : 'BePapaPal'
+    }
+]
+
 const PremiumData = [
     {
         id: 1,
@@ -162,6 +182,45 @@ const CompanionCareHealthPlans = [
 
 ]
 
+const EmployersCompanionCare = [
+    {
+        id : 1,
+        title : 'Give back time',
+        desc : 'Whether it’s groceries, light house work, or taking Fido for a walk, our Papa Pals put time back in your employees’ day.',
+        icon : <ImAndroid />
+    },
+    {
+        id : 2,
+        title : 'Support working parents',
+        desc : 'Our Papa Pals love to play, but they also help with homework, snacks, meals, and more while Mom or Dad works from home.',
+        icon : <ImAndroid />
+    },
+    {
+        id : 3,
+        title : 'Care for aging parents',
+        desc : 'Employees can’t be everywhere at once. So, we provide peace of mind with companionship and non-medical care for loved ones.',
+        icon : <ImAndroid />
+    },
+    {
+        id : 4,
+        title : 'Create space for recovery',
+        desc : 'We all get injured or sick occasionally. Papa Pals ease the load and remove barriers to healthy healing.',
+        icon : <ImAndroid />
+    },
+    {
+        id : 5,
+        title : 'Support DEIB initiatives',
+        desc : 'Our Papa Pals are diverse, just like your employees. We support families with different backgrounds, structures, and languages.',
+        icon : <ImAndroid />
+    },
+    {
+        id : 6,
+        title : 'Create an impact',
+        desc : 'Our self and family solution simplifies complexity and engages employees, addressing physical and mental health at the root cause.',
+        icon : <ImAndroid />
+    },
+]
+
 
 const ResourceData = [
     {
@@ -211,6 +270,30 @@ const ResourceHealthPlans = [
     }
 ]
 
+const ResourceEmployers = [
+    {
+        id : 1,
+        title : 'Papa for Employers',
+        desc : 'Learn how to support the people that support you—with high-quality, human help for employees and their loved ones from our friendly Papa Pals.',
+        img : 'Resources-Thumbnail-Papa-for-Employers.jpg',
+        alt : 'Employers'
+    },
+    {
+        id : 2,
+        title : 'The Hidden Cost of Invisible Labor',
+        desc : 'As the lines between work and home blur, employees are struggling to balance priorities. Discover the impacts, and how to change the paradigm.',
+        img : 'Resource-thumbnail-The-hidden-cost-of-labor.png',
+        alt : 'Employers'
+    },
+    {
+        id : 3,
+        title : '5 Tips to Support Employee Caregivers',
+        desc : 'Understanding the challenges employee caregivers face is the first step in mitigating their impact. Learn how to support the people that support you.',
+        img : '2022-Resource-Thumbnail-5-tips-to-support-employee-caregivers-1.webp',
+        alt : 'Employers'
+    }
+]
+
 const ArticleData = [
     {
         id : 1,
@@ -252,6 +335,27 @@ const ArticleHealthPlans =[
         desc : 'Post-visit, we gather feedback ensuring members get the right care and their favorite Papa Pal. Documentation, data analysis, and regular reporting help us (and your members) get better and better!' ,
         icon : <TbCircleNumber3 className="circle-number" />
      }
+]
+
+const ArticleEmployers = [
+    {
+        id : 1,
+        title : 'Employees enroll online.',
+        desc : 'We work with you to introduce the new benefit, educate employees, and drive enrollment. We offer co-branded materials and proactive outreach to encourage adoption.',
+        icon : <TbCircleNumber1 className="circle-number" />
+    },
+    {
+        id : 2,
+        title : 'We match them with Papa Pals based on their needs.',
+        desc : 'Employees use the Papa Care app to request in-person or online visits with Papa Pals. Our smart algorithm finds the best match for a playdate, personal task assistance, or a visit with grandma.',
+        icon : <TbCircleNumber2 className="circle-number" />
+    },
+    {
+        id : 3,
+        title : 'Employee feedback and data drive ongoing improvements.',
+        desc : 'We gather information every visit to ensure your employees are engaged, satisfied and getting the help (+ results) they need. Our vetted and highly-trained Papa Pals make an impact you’ll feel organization-wide.',
+        icon : <TbCircleNumber3 className="circle-number" />
+    },
 ]
 
 
@@ -305,4 +409,62 @@ const OurTechData = [
     },
 ]
 
-export  {PremiumData, CompanionCare, CompanionCareHealthPlans, ResourceData, ResourceHealthPlans, ArticleData, ArticleHealthPlans, HomeData, HomeHealth, ProvenData, OurTechData}; 
+const OurTechEmployersData = [
+    {
+        id : 1,
+        title : 'Our technology',
+        para : 'We pair tech with services for an unbeatable human experience. Our apps connect Papa Pals with employees to provide care for aging loved ones, children, pets, or themselves.'
+    },
+    {
+        id : 2,
+        title : 'Easy to use Papa Care app for employees.',
+        para : 'Available for iPhone and Android, our Papa Care app makes it simple for employees to schedule and manage at-home or virtual visits, and specify personal, child, or elder care needs.'
+    },
+    {
+        id : 3,
+        title : 'Intuitive app to empower our Papa Pals.',
+        para : 'We use a powerful algorithm to determine the best Papa Pals for your employees and their family members. Our Papa Pal app provides all the information they need to deliver a great experience every time.'
+    },
+    {
+        id : 4,
+        title : 'Detailed, timely reporting for clients.',
+        para : 'Through the Papa Care app and post-visit surveys, we provide reporting on utilization, satisfaction, and outcomes. We even gather employee testimonials, so you know just how much of an impact you’ve made!'
+    },
+]
+
+const RxHumanHome = [
+    {
+        id : 1,
+        paragraph : 'Introducing our new quarterly magazine, Rx: Human',
+        mainPara : 'Subscribe for the latest on topics like health equity, social drivers of health, and closing care gaps.',
+        btn : 'sign me up',
+        img1 : 'pexels-joão-rabelo-10291366.jpg',
+        img2 : 'pepsi.jpeg',
+        img3 : 'rx-human.jpg',
+    }
+]
+
+const RxHumanHealth = [
+    {
+        id : 1,
+        paragraph : 'Introducing our new quarterly magazine, Rx: Human',
+        mainPara : 'Subscribe to get the latest on topics like health equity, social drivers of health, and closing care gaps.',
+        btn : 'sign me up',
+        img1 : 'pexels-joão-rabelo-10291366.jpg',
+        img2 : 'pepsi.jpeg',
+        img3 : 'rx-human.jpg',
+    }
+]
+
+const RxHumanEmployers = [
+    {
+        id : 1,
+        paragraph : 'New guide for employers looking to attract and retain employees.',
+        mainPara : 'Stand out in the race for talent with caregiver benefits.',
+        btn : 'get the guide',
+        img1 : 'pexels-joão-rabelo-10291366.jpg',
+        img2 : 'pepsi.jpeg',
+        img3 : 'Screen-Shot-2022-03-15-at-11.56.06-AM.png',
+    }
+]
+export  {PremiumData, CompanionCare, CompanionCareHealthPlans, ResourceData, ResourceHealthPlans, ArticleData, ArticleEmployers, ResourceEmployers, RxHumanHome, RxHumanEmployers, RxHumanHealth, ArticleHealthPlans, HomeData, HomeHealth, ProvenData, OurTechData, EmployersData, BePapaPalData, EmployersCompanionCare, OurTechEmployersData}; 

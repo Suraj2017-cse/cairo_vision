@@ -1,0 +1,23 @@
+
+.font{
+    font-family:'Braah One', sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+  }
+
+  @media (max-width:484px){
+    .font{
+        font-size: 3rem;
+    }
+  }
+
+  .ourTech{
+    width: 41.3% !important;
+    top: -10%;
+    left: 50%;
+    transform: translate(-18%, -159%);
+  }
+  .ourTech img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
