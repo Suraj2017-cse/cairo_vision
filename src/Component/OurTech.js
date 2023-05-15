@@ -27,7 +27,7 @@ const OurTech = ({ ourTechItem }) => {
             <div 
               id='carouselExampleSlidesOnly'
               className='carousel slide position-bsolute ourTech'
-              data-bs-ride='carousel' data-interval="1000">
+              data-bs-ride='carousel' data-bs-interval="1000">
               <div className='carousel-inner'>
                 <div className='carousel-item active'>
                   <img src='./papa-app-screen-1-1.jpg' className='d-block w-100' alt='Carousel' />
