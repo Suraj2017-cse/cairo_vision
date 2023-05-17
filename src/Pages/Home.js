@@ -7,6 +7,7 @@ import Article from "../Component/Article";
 import Resources from "../Component/Resources";
 import Footer from "../Component/Footer";
 import { HomeData, ResourceData, ArticleData, CompanionCare, RxHumanHome } from "../Data";
+import StartEasy from "../Component/StartEasy";
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
         <Resources resource={ResourceData} />
       </main>
       <Footer />
+      <StartEasy />
     </>
   );
 };

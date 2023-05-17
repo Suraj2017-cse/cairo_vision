@@ -221,6 +221,32 @@ const EmployersCompanionCare = [
     },
 ]
 
+const BePapaCompanionCare = [
+    {
+        id : 1,
+        title : 'Errands',
+        desc : 'Pick up groceries or medications for members, along with other items that make life a little easier.',
+        icon : <ImAndroid />
+    },
+    {
+        id : 2,
+        title : 'Rides',
+        desc : 'Give members a lift to the doctor’s office, the bank, or anywhere they need to go. No car? No worries! We have other types of visits.',
+        icon : <ImAndroid />
+    },
+    {
+        id : 3,
+        title : 'Companionship',
+        desc : 'Have a great conversation, go on a walk, watch a movie, or cook something together!',
+        icon : <ImAndroid />
+    },
+    {
+        id : 4,
+        title : 'At home',
+        desc : 'Help members be more comfortable at home with light cleaning, laundry, meal prep, and more.',
+        icon : <ImAndroid />
+    },
+]
 
 const ResourceData = [
     {
@@ -358,6 +384,26 @@ const ArticleEmployers = [
     },
 ]
 
+const ArticleBePapa = [
+    {
+        id : 1,
+        title : 'Browse & book',
+        desc : 'Browse nearby visits and find the ones that work for you. Then, just tap to accept. For more earnings, book your visits up to 30 days in advance.',
+        icon : <TbCircleNumber1 className="circle-number" />
+    },
+    {
+        id : 2,
+        title : 'Show up',
+        desc : 'The Papa Pal app tracks your travel. All you need to do is show up on time, and have a great visit. That’s it!',
+        icon : <TbCircleNumber2 className="circle-number" />
+    },
+    {
+        id : 3,
+        title : 'Get paid',
+        desc : 'You’ll earn an hourly rate, plus bonuses (based on how many visits you complete), as well as any other bonuses we may offer. Papa Pals are usually paid within 2 business days.',
+        icon : <TbCircleNumber3 className="circle-number" />
+    },
+]
 
 const ProvenData = [
     {
@@ -456,6 +502,7 @@ const RxHumanHealth = [
     }
 ]
 
+
 const RxHumanEmployers = [
     {
         id : 1,
@@ -467,4 +514,4 @@ const RxHumanEmployers = [
         img3 : 'Screen-Shot-2022-03-15-at-11.56.06-AM.png',
     }
 ]
-export  {PremiumData, CompanionCare, CompanionCareHealthPlans, ResourceData, ResourceHealthPlans, ArticleData, ArticleEmployers, ResourceEmployers, RxHumanHome, RxHumanEmployers, RxHumanHealth, ArticleHealthPlans, HomeData, HomeHealth, ProvenData, OurTechData, EmployersData, BePapaPalData, EmployersCompanionCare, OurTechEmployersData}; 
+export  {PremiumData, CompanionCare, BePapaCompanionCare, CompanionCareHealthPlans, ResourceData, ResourceHealthPlans, ArticleData, ArticleEmployers, ResourceEmployers, ArticleBePapa, RxHumanHome, RxHumanEmployers, RxHumanHealth, ArticleHealthPlans, HomeData, HomeHealth, ProvenData, OurTechData, EmployersData, BePapaPalData, EmployersCompanionCare, OurTechEmployersData}; 
