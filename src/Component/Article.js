@@ -8,8 +8,8 @@ const Article = ({ article, para, img }) => {
     color : '#67F1FF',
     fontWeight : 'bolder'
   }
-  return (
-    <article>
+  return ( 
+    <article className={`${img === './Pals_howitworks_683x1024.jpg' ? 'articleBg' : 'articleB'}`}>
       <div className="article">
         <div className="how-it-works">
           <div className="how-work">

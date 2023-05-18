@@ -514,4 +514,60 @@ const RxHumanEmployers = [
         img3 : 'Screen-Shot-2022-03-15-at-11.56.06-AM.png',
     }
 ]
-export  {PremiumData, CompanionCare, BePapaCompanionCare, CompanionCareHealthPlans, ResourceData, ResourceHealthPlans, ArticleData, ArticleEmployers, ResourceEmployers, ArticleBePapa, RxHumanHome, RxHumanEmployers, RxHumanHealth, ArticleHealthPlans, HomeData, HomeHealth, ProvenData, OurTechData, EmployersData, BePapaPalData, EmployersCompanionCare, OurTechEmployersData}; 
+
+const LovePapaData = [
+    {
+        id : 1,
+        title : 'Earn what you want',
+        para : 'As a Papa Pal, there is no limit to the number of visits you can complete, or the amount you can earn. In addition to hourly pay, we reimburse mileage and bonuses based on how many visits you complete.',
+        img : 'face-earn.webp'
+    },
+    {
+        id : 2,
+        title : 'Do meaningful work',
+        para : 'Being a Papa Pal means making a difference in your community. The support Papa Pals provide has an impact on the well-being of our members. Over 65% of Papa members felt less lonely after visiting with a Papa Pal.',
+        img : 'face-meaningful-work.webp'
+    },
+    {
+        id : 3,
+        title : 'Work on your schedule',
+        para : 'Papa Pals have complete control over their work schedules. Want to plan ahead? Book your visits up to 30 days in advance. Have some extra time? Grab a nearby visit today. And, with members nationwide, Papa Pals can work from anywhere.',
+        img : 'face-schedule.webp'
+    },
+    {
+        id : 4,
+        title : 'Keep learning and growing',
+        para : 'Papa Pals help build supportive, human connections while getting invaluable experience with real people. You’ll gain valuable skills that are transferable to nearly any career path, including healthcare.',
+        img : 'face-learning.webp'
+    },
+]
+
+
+
+
+const EasyData = [
+    {
+        id : 1,
+        title : 'Provide your information',
+        first : 'Your ID info (driver’s license or state ID)',
+        second : 'If you have a car and want to do transportation visits, we’ll need those details',
+        icon : <ImAndroid />
+    },
+    {
+        id : 3,
+        title : 'Apply online in minutes',
+        first : 'Upload your details to complete your application',
+        second : 'We’ll run a background check',
+        icon : <ImAndroid />
+    },
+    {
+        id : 3,
+        title : 'Watch a welcome video',
+        first : 'Open the Papa Pal app to view the video',
+        second : 'Once you’re cleared, add your bank info to get paid!',
+        icon : <ImAndroid />
+    }
+]
+
+
+export  {PremiumData, CompanionCare, BePapaCompanionCare, CompanionCareHealthPlans, ResourceData, ResourceHealthPlans, ArticleData, ArticleEmployers, ResourceEmployers, ArticleBePapa, RxHumanHome, RxHumanEmployers, RxHumanHealth, ArticleHealthPlans, HomeData, HomeHealth, ProvenData, OurTechData, EmployersData, BePapaPalData, EmployersCompanionCare, OurTechEmployersData, LovePapaData, EasyData}; 

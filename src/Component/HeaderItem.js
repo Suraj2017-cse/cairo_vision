@@ -175,7 +175,7 @@ const handleResources = () => {
         <div className='position-fixed human-icon'>
          <IoIosMan className='position-absolute fs-1' />
         </div>
-        <svg aria-hidden="true" viewBox="0 0 1440 64" className="w-full h-[21px] md:h-8 lg:h-12 xl:h-16 block absolute fill-bg top-0 left-0 transform translate-y-[calc(-100%+1px)] overflow-visible" preserveAspectRatio="none"><path d="M0,0S203,64,720,64,1440,0,1440,0V64H0Z" fill="#FFEDCC"></path></svg>
+        <svg aria-hidden="true" viewBox="0 0 1440 64" className="w-full h-[21px] md:h-8 lg:h-12 xl:h-16 block absolute fill-bg top-0 left-0 transform translate-y-[calc(-100%+1px)] overflow-visible" preserveAspectRatio="none"><path d="M0,0S203,64,720,64,1440,0,1440,0V64H0Z" fill={`${(home[0].alt === 'BePapaPal') ? '#1140C0' : '#FFEDCC'}`}></path></svg>
       </header>
     </>
   );
