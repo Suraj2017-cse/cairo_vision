@@ -51,6 +51,16 @@ const BePapaPalData = [
     }
 ]
 
+const ContactPapaData = [
+    {
+        id: 1,
+        title: 'Get in touch',
+        para: 'Need a little help getting started or using your Papa benefit? Are you a Papa Pal or interested in becoming one? We’ve got you!',
+        para_2: 'Are you a member of a health plan or employer-sponsored plan looking to enroll or schedule a visit? Find your plan’s dedicated line',
+        para3: 'Are you a health plan, employer, or potential partner with a business inquiry? ContactTalk to Sales'
+    }
+]
+
 const PremiumData = [
     {
         id: 1,
@@ -570,4 +580,4 @@ const EasyData = [
 ]
 
 
-export  {PremiumData, CompanionCare, BePapaCompanionCare, CompanionCareHealthPlans, ResourceData, ResourceHealthPlans, ArticleData, ArticleEmployers, ResourceEmployers, ArticleBePapa, RxHumanHome, RxHumanEmployers, RxHumanHealth, ArticleHealthPlans, HomeData, HomeHealth, ProvenData, OurTechData, EmployersData, BePapaPalData, EmployersCompanionCare, OurTechEmployersData, LovePapaData, EasyData}; 
+export  {PremiumData, CompanionCare, BePapaCompanionCare, CompanionCareHealthPlans, ResourceData, ResourceHealthPlans, ContactPapaData, ArticleData, ArticleEmployers, ResourceEmployers, ArticleBePapa, RxHumanHome, RxHumanEmployers, RxHumanHealth, ArticleHealthPlans, HomeData, HomeHealth, ProvenData, OurTechData, EmployersData, BePapaPalData, EmployersCompanionCare, OurTechEmployersData, LovePapaData, EasyData}; 

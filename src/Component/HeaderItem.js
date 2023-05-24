@@ -41,6 +41,10 @@ const handleBePapa = () => {
 const handleResources = () => {
   navigate('/resources')
 }
+const handleContact = () => {
+  navigate('/contactpapa')
+}
+
   
   
   return (
@@ -75,7 +79,7 @@ const handleResources = () => {
                 </li>
               </ul>
               <ul className='list-unstyled d-flex justify-content-center align-items-center'>
-                <li className='nav-item contact-papa rounded-5 px-4 py-3 fw-bolder ms-3'>
+                <li className='nav-item contact-papa rounded-5 px-4 py-3 fw-bolder ms-3' onClick={handleContact}>
                   <Link className='nav-link text-uppercase'>
                     Contact Papa
                   </Link>
@@ -136,9 +140,9 @@ const handleResources = () => {
        {
         home.map((element) => (
           <div className='container' key={element.id}>
-          <div className='row mt-5'>
-            <div className='col-md-6 mt-5'>
-              <h2> {element.title}<br />{element.title2}</h2>
+          <div className={`${(element.title === 'Get in touch') ? 'd-flex flex-column text-center w-50 m-auto': 'row'} mt-5`}>
+            <div className={`${(element.title === 'Get in touch')? '': 'col-md-6'} mt-5`}>
+              <h2 className={`${(element.title === 'Get in touch')? 'font': ''}`}> {element.title}<br />{element.title2}</h2>
               <p>{element.para}</p>
               <p>{element.para2}</p>
               {element.alt === 'Hero-Papa' ? <select className='form-select mb-4 rounded-5 px-3 py-3 mt-4 fw-bolder fs-3'>
@@ -160,12 +164,14 @@ const handleResources = () => {
               </select> : <button className="px-3 py-2 border-0 rounded-5 fw-bolder text-uppercase  contact-papa">get started</button>}
             </div>
 
-            <div className='col-md-6 mt-5'>
-              <img
+            <div className={`${(element.title === 'Get in touch')? '': 'col-md-6'} mt-5`}>
+              {
+                element.title === 'Get in touch' ?(<><p>{element.para_2}</p> <p>{element.para3}</p></> ) : (<img
                 src={element.img}
                 alt={element.alt}
                 className='w-100 rounded-5 hero-mummy'
-              />
+              />)
+              }
             </div>
           </div>
         </div>

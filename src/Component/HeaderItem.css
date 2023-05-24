@@ -31,8 +31,11 @@
   .hero-mummy-bgColor{
     background-color: #06083C !important;
   }
-  
 
+.noColor{
+  background-color: transparent !important;
+  color: #000000 !important;
+}
   
   /* Section Hero */
   

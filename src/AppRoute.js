@@ -5,6 +5,7 @@ import HealthPlans from './Pages/HealthPlans'
 import Employers from './Pages/Employers'
 import BePapaPal from './Pages/BePapaPal'
 import ResourcesPage from './Pages/ResourcesPage'
+import ContactPapa from './Pages/ContactPapa'
 
 const AppRoute = () => {
     const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const AppRoute = () => {
         {
           path : '/resources',
           element : <ResourcesPage />
+        },
+        {
+          path : '/contactpapa',
+          element : <ContactPapa />
         },
 
     ])
