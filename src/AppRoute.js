@@ -22,7 +22,7 @@ const AppRoute = () => {
           element : <Employers />
         },
         {
-          path : '//be-papa-pal',
+          path : '/be-papa-pal',
           element : <BePapaPal />
         },
         {

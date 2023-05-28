@@ -46,7 +46,6 @@ const handleContact = () => {
 }
 
   
-  
   return (
     <>
       <header className={`header ${home[0].alt === 'Hero-Papa' ? 'h': 'hero-mummy-bgColor text-white'}`}>
@@ -161,7 +160,7 @@ const handleContact = () => {
                 <option className='fw-bold'>
                   about career opportunities at Papa
                 </option>
-              </select> : <button className="px-3 py-2 border-0 rounded-5 fw-bolder text-uppercase  contact-papa">get started</button>}
+              </select> : <button className={(home[0].title === 'Get in touch') ? 'd-none' : "px-3 py-2 border-0 rounded-5 fw-bolder text-uppercase  contact-papa"}>get started</button>}
             </div>
 
             <div className={`${(element.title === 'Get in touch')? '': 'col-md-6'} mt-5`}>
